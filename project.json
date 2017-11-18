@@ -1,0 +1,30 @@
+{
+    "project_type": "javascript",
+
+    "debugMode" : 1,
+    "showFPS" : true,
+    "frameRate" : 45,
+    "noCache" : true,
+    "id" : "gameCanvas",
+    "renderMode" : 0,
+    "engineDir":"frameworks/cocos2d-html5",
+
+    "modules" : [
+        "cocos2d",
+        "gui",
+        "cocostudio",
+        "socketio",
+        "extensions"
+    ],
+
+    "jsList" : [
+        "src/resource.js",
+        "src/common/MPConfig.js",
+
+        "src/extend/ToastSystem.js",
+        "src/extend/Storage.js",
+        "src/extend/CCNodeExtend.js",
+
+        "src/app.js"
+    ]
+}
