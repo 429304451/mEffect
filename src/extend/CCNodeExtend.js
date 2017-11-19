@@ -361,11 +361,18 @@ cc.Node.prototype.bt = function (fn) {
             return true;
         },
         onTouchEnded: function (touch, event) {
-      
-        	fn && fn(touch, event);
-
-        	self.setScale(self.BeganScale_);
+      		self.setScale(self.BeganScale_);
 			self.setOpacity(self.BeganOpacity_);
+			// 判断是否在区域范围 才执行函数
+			var target = event.getCurrentTarget();
+			// Get the position of the current point relative to the button.
+			var locationInNode = target.convertToNodeSpace(touch.getLocation());
+			var s = target.getContentSize();
+			var rect = cc.rect(0, 0, s.width, s.height);
+			// Check the click area
+			if (target.isVisible() && cc.rectContainsPoint(rect, locationInNode)) {
+				fn && fn(touch, event);
+			}
         },
 	});
 	

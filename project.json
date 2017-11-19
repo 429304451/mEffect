@@ -24,7 +24,9 @@
         "src/extend/ToastSystem.js",
         "src/extend/Storage.js",
         "src/extend/CCNodeExtend.js",
+        "src/extend/SoundEngine.js",
 
-        "src/app.js"
+        "src/app.js",
+        "src/common/MEnter.js"
     ]
 }
