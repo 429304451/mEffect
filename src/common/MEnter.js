@@ -21,7 +21,9 @@ var MEnter = cc.Scene.extend({
 
 	ctor: function () {
 		this._super();
-		this.introduceDic = {"HelloWorldScene": "Hey 哈喽 矮油！"};
+		this.introduceDic = {"HelloWorldScene": "Hey 哈喽 矮油！",
+			"ShaderCommon": "Shader 通用测试",
+		};
 
 		// 测试使用
 	},
@@ -31,6 +33,6 @@ var MEnter = cc.Scene.extend({
 		// var node = new cc.LabelTTF(this.introduceDic.HelloWorldScene, "Arial", 20);
 		// node.to(this).pp(0.5, 0.5);
 		var name = "HelloWorldScene";
-		var node = new MLabel(name, this.introduceDic[name]).to(this).pp(0.5, 0.5);
+		var node = new MLabel(name, this.introduceDic[name]).to(this).p(V.w/2, V.h/2);
 	}
 });

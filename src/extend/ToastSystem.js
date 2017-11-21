@@ -26,7 +26,7 @@ var mlog = function () {
     var scene = cc.director.getRunningScene();
     var node = new cc.LabelTTF(mstr, "Arial", 31);
     node.to(scene, 9999).p(V.w / 2, print_pos_diff * 30);
-    node.setFontFillColor(cc.color(255, 255, 250));
+    node.setFontFillColor(cc.color(80, 19, 0));
 
     var action = cc.sequence(
         cc.spawn(
@@ -34,6 +34,6 @@ var mlog = function () {
             cc.moveBy(3.5, cc.p(0, 200))
         ),
         cc.removeSelf()
-        );
+    );
     node.runAction(action);
 };

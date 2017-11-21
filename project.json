@@ -26,6 +26,11 @@
         "src/extend/CCNodeExtend.js",
         "src/extend/SoundEngine.js",
 
+        "src/gpu/ShaderCommon.js",
+        "src/gpu/Wenyu.js",
+        "src/gpu/BinsRipple.js",
+        "src/gpu/Hensive.js",
+
         "src/app.js",
         "src/common/MEnter.js"
     ]

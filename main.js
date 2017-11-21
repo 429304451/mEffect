@@ -80,9 +80,9 @@ cc.game.onStart = function(){
     // The game will be resized when browser size change
     cc.view.resizeWithBrowserSize(true);
 
-    //load resources HelloWorldScene MEnter
+    //load resources HelloWorldScene MEnter ShaderCommon Wenyu Hensive
     cc.LoaderScene.preload(g_resources, function () {
-        cc.director.runScene(new MEnter());
+        cc.director.runScene(new Hensive());
     }, this);
 };
 cc.game.run();
