@@ -9,7 +9,7 @@ var MLabel = cc.LabelTTF.extend({
 	onEnter: function () {
 		this._super();
 		var self = this;
-		this.bt(function() {
+		this.quickBt(function() {
 			mstr = "cc.director.runScene(new " + self.name + "())";
 			eval(mstr);
 		});

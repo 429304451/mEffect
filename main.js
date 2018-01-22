@@ -1,4 +1,4 @@
-/**
+﻿/**
  * A brief explanation for "project.json":
  * Here is the content of project.json file, this is the global configuration for your game, you can modify it to customize some behavior.
  * The detail of each field is under it.
@@ -71,18 +71,23 @@ cc.game.onStart = function(){
     cc.view.adjustViewPort(true);
 
     // Uncomment the following line to set a fixed orientation for your game
-    // cc.view.setOrientation(cc.ORIENTATION_PORTRAIT);
+    // cc.ORIENTATION_LANDSCAPE cc.ORIENTATION_PORTRAIT
+    // cc.view.setOrientation(cc.ORIENTATION_LANDSCAPE);
 
-    // Setup the resolution policy and design resolution size
+    // Setup the resolution policy and design resolution size 960, 640 720, 1280
     // cc.view.setDesignResolutionSize(960, 640, cc.ResolutionPolicy.SHOW_ALL);
     cc.view.setDesignResolutionSize(V.w, V.h, cc.ResolutionPolicy.SHOW_ALL);
 
     // The game will be resized when browser size change
     cc.view.resizeWithBrowserSize(true);
 
-    //load resources HelloWorldScene MEnter ShaderCommon Wenyu Hensive
-    cc.LoaderScene.preload(g_resources, function () {
-        cc.director.runScene(new Hensive());
+    //入口 告诉我要跑哪个Scene
+    // cc.LoaderScene.preload(g_resources, function () {
+    //     cc.director.runScene(new HelloWorldScene());
+    // }, this);
+    cc.LoaderScene.preload(gpu_res, function () {
+        // PopstarScene ShaderScene HelloWorldScene MEnter ShaderCommon Wenyu Hensive
+        cc.director.runScene(new PopstarScene());
     }, this);
 };
 cc.game.run();

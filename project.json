@@ -20,18 +20,36 @@
     "jsList" : [
         "src/resource.js",
         "src/common/MPConfig.js",
+        "src/app.js",
 
-        "src/extend/ToastSystem.js",
+        "src/extend/AudioEngineExtend.js",
         "src/extend/Storage.js",
-        "src/extend/CCNodeExtend.js",
+        "src/extend/CCBootExtend.js",
+        "src/extend/CCEventManagerExtend.js",
         "src/extend/SoundEngine.js",
+        "src/extend/CCNodeExtend.js",
+        "src/extend/CCEditBoxExtend.js",
+        
+        "src/extend/ToastSystem.js",
+        "src/extend/Util.js",
+        "src/extend/ClassPool.js",
+        "src/extend/MPRichText.js",
+        "src/extend/WebViewLayer.js",
+
+        "src/extend/Heartbeat.js",
+        "src/extend/md5.js",
+        "src/extend/sha1.js",
 
         "src/gpu/ShaderCommon.js",
         "src/gpu/Wenyu.js",
         "src/gpu/BinsRipple.js",
         "src/gpu/Hensive.js",
 
-        "src/app.js",
+        "src/Popstar/PopMain.js",
+        "src/Popstar/PopStartLayer.js",
+        "src/Popstar/PopMainLayer.js",
+        "src/Popstar/PopstarScene.js",
+
         "src/common/MEnter.js"
     ]
 }
