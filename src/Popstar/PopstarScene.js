@@ -15,6 +15,7 @@ var PopstarScene = cc.Scene.extend({
     },
     onEnter:function () {
         this._super();
+        // new PopStartLayer().to(this);
         new PopMainLayer().to(this);
         // this.MainLayer = new HelloWorldLayer("PopstarScene").to(this);
         // this.addChild(this.MainLayer);

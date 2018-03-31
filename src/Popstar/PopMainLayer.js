@@ -349,8 +349,6 @@ var PopMainLayer = cc.Layer.extend({
 	                jj += "xxx" + i + j + "    ";
 	            }
 	        }
-	        // cc.log(jj);
-	        // console.log("jj", jj);
 	    }
 	    this.deadStar();
     },
@@ -415,8 +413,8 @@ var PopMainLayer = cc.Layer.extend({
 	                                    this.totalScore += this.oneDeadStarScore;
 	                                    this.scoreFont.setString(this.totalScore + "");
 	                                }, this),
-	                                cc.removeSelf(true),
-	                        ));
+	                                cc.removeSelf(true)
+	                        ))
 	                    }
 	                }
 	            }
